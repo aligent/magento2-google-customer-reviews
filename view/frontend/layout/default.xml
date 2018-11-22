@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/*
+ * Solvature_GoogleCustomerReviews
+ * @category   Solvature
+ * @package    Solvature_GoogleCustomerReviews
+ * @copyright  Copyright (c) 2018 Solvature, Inc.
+ * @version    1.0.0
+ */ -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="before.body.end">
+            <block class="Solvature\GoogleCustomerReviews\Block\Badge" name="google.customer.reviews.badge" template="Solvature_GoogleCustomerReviews::badge.phtml" />
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/*
+ * Solvature_GoogleTrustedStores
+ * @category   Solvature
+ * @package    Solvature_GoogleTrustedStores
+ * @copyright  Copyright (c) 2018 Solvature, Inc.
+ * @version    1.0.0
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="google">
+            <group id="trustedstores" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label><![CDATA[Google Trusted Stores <span style="font-size: 0.5rem; font-weight:normal; font-style: italic">By Solvature</span>]]></label>
+                <field id="enable" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="merchant_id" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Merchant Center Id</label>
+                    <comment>You can find this value in the Google Merchant Center</comment>
+                </field>
+                <field id="badge_position" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Badge Position</label>
+                    <source_model>Solvature\GoogleCustomerReviews\Model\Config\BadgePosition</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
