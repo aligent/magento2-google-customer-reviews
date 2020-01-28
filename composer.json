@@ -9,15 +9,17 @@
     "authors": [
         {
           "name": "Juergen Schreck, Solvature Inc.",
-          "homepage": "http:s//www.solvature.us/",
+          "homepage": "https://www.solvature.us/",
           "email": "info@solvature.us"
+        },
+        {
+          "name": "Todd Hainsworth",
+          "homepage": "https://www.aligent.com.au/",
+          "email": "todd.hainsworth@aligent.com.au"
         }
     ],
-    "require": {
-      "php": "~5.5.22|~5.6.0|7.0.2|7.0.4|~7.0.6"
-    },
     "autoload": {
-	  "psr-4": { "Solvature\\GoogleTrustedStores\\": "" },
+	  "psr-4": { "Solvature\\GoogleCustomerReviews\\": "" },
       "files": [ "registration.php" ]
     }
 }
